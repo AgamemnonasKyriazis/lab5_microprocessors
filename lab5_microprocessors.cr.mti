@@ -1,9 +1,16 @@
-C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfile.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\registerfile.v}
+C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfile.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfile.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MCPU_Registerfile
 
 Top level modules:
 	MCPU_Registerfile
+
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/d1s4400tb2.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\d1s4400tb2.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module d1s4400tb2
+
+Top level modules:
+	d1s4400tb2
 
 } {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/cputb2.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/cputb2.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -12,26 +19,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MCPUtb2
 
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module MCPU_Alutb
-
-Top level modules:
-	MCPU_Alutb
-
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/cpu.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\cpu.v}
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/cpu.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/cpu.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MCPU
 
 Top level modules:
 	MCPU
 
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/d1s4400tb2.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/d1s4400tb2.v
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module d1s4400tb2
+-- Compiling module MCPU_Alutb
 
 Top level modules:
-	d1s4400tb2
+	MCPU_Alutb
 
 } {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/d1s4400.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/d1s4400.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -40,7 +40,7 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	d1s4400
 
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfiletb.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\registerfiletb.v}
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfiletb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/registerfiletb.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MCPU_Registerfiletb
 
@@ -61,7 +61,7 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	MCPU_RAMController
 
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/cputb.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\cputb.v}
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/cputb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/cputb.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MCPUtb
 
@@ -75,19 +75,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	d1s4400tb
 
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb2.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb2.v
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/alutb2.v {1 {vlog -work work {C:\Users\agame\Documents\GitHub\lab5_microprocessors\alutb2.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MCPU_Alutb2
 
 Top level modules:
 	MCPU_Alutb2
-
-} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/ramcontrollertb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/ramcontrollertb.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module MCPU_RAMControllertb
-
-Top level modules:
-	MCPU_RAMControllertb
 
 } {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/alu.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/alu.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -95,5 +88,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	MCPU_Alu
+
+} {} {}} C:/Users/agame/Documents/GitHub/lab5_microprocessors/ramcontrollertb.v {1 {vlog -work work C:/Users/agame/Documents/GitHub/lab5_microprocessors/ramcontrollertb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_RAMControllertb
+
+Top level modules:
+	MCPU_RAMControllertb
 
 } {} {}}

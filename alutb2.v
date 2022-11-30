@@ -24,6 +24,9 @@ always begin
 #3 r2=4; #3 r2=4; #3 r2=0; #3 r2=0;
 end
 
+always #3 opcode[0] = $random;
+always #3 opcode[1] = $random;
+
 initial begin
   $display("@%0dns default is selected, opcode %b",$time,opcode);
 end

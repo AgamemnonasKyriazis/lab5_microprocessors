@@ -26,7 +26,8 @@ initial begin
 	end
 end
 
-always @ (tb_dut_inputs) begin
+always //@ (tb_dut_inputs) begin
+begin
 	#2 
 	if( (tb_dut_inputs == 3'b110 && tb_d == 1'b1) || (tb_dut_inputs != 3'b110 && tb_d == 1'b0))
 		d_correct = 1'b1;
