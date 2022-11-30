@@ -9,6 +9,10 @@ reg [WORD_SIZE-1:0] r2;
 wire [WORD_SIZE-1:0] out;
 wire OVERFLOW;
 
+reg iscorrect;
+reg [WORD_SIZE-1:0] res;
+reg cf;
+
 MCPU_Alu #(.CMD_SIZE(CMD_SIZE), .WORD_SIZE(WORD_SIZE)) aluinst (opcode, r1, r2, out, OVERFLOW);
 
 // Testbench code goes here
@@ -24,29 +28,23 @@ initial begin
   $display("@%0dns default is selected, opcode %b",$time,opcode);
 end
 
-reg iscorrect;
-reg [WORD_SIZE-1:0] result;
-reg result_OVERFLOW;
-always @(opcode, r1, r2) begin
-	#2
-	case(opcode)
-		0 : begin
-			result = r1&r2;
-		end
-		1 : begin
-			result = r1|r2;		
-		end
-		2 : begin
-			result = r1^r2;			
-		end
-		3 : begin
-			{result_OVERFLOW, result} = r1+r2;		
-		end
-	endcase
-
-	if(result == out)
-		iscorrect = 1;
-	else
-		iscorrect = 0;
+always begin
+case(opcode)
+	0 : begin
+	 res = #2 r1&r2;
+	end
+	1 : begin
+	 res = #2 r1|r2;
+	end	
+	2 : begin
+	 res = #2 r1^r2;
+	end
+	default : begin
+	 {cf, res} = #2 r1+r2;
+	end
+endcase
 end
+
+always @(res, out)
+  iscorrect = (res == out);
 endmodule

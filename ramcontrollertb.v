@@ -14,6 +14,7 @@ reg [WORD_SIZE-1:0] instrrd;
 
 wire [WORD_SIZE-1:0] datard_tb;
 wire [WORD_SIZE-1:0] instrrd_tb;
+
 MCPU_RAMController #(.WORD_SIZE(WORD_SIZE), .ADDR_WIDTH(ADDR_WIDTH)) tb_ram (
 	.we(we), .re(re),
 	.datawr(datawr), .addr(addr), .instraddr(instraddr),
@@ -40,8 +41,6 @@ initial begin
 		re = 1;
 		addr = i;
 	end
-	#5
-	$finish;
 end
 
 always @ (addr or we or re or datawr)
