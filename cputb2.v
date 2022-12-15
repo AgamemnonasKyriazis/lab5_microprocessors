@@ -52,18 +52,18 @@ begin
 		cpuinst.regfileinst.R[i]=0;
 	 end  
                                                                                  //memory address: instruction
-    i=0;  	cpuinst.raminst.mem[0]={cpuinst.OP_SHORT_TO_REG, R0, 8'b0100_0100};  //0: R0=0x44;
-    i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_SHORT_TO_REG, R1, 8'b0000_0000};  //1: R1=0x00;
+   i=0;  	cpuinst.raminst.mem[0]={cpuinst.OP_SHORT_TO_REG, R0, 8'b0100_0100};    //0: R0=0x44;
+   i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_SHORT_TO_REG, R1, 8'b0000_0000};    //1: R1=0x00;
 	 
-	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_STORE_TO_MEM, R0, 8'b0110_0100};	//2: mem[100]=R0;
-	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_STORE_TO_MEM, R1, 8'b0110_0101};	//3: mem[101]=R1;
+	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_STORE_TO_MEM, R0, 8'b0110_0100};	   //2: mem[100]=R0;
+	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_STORE_TO_MEM, R1, 8'b0110_0101};	   //3: mem[101]=R1;
 	 
 	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_LOAD_FROM_MEM, R2, 8'b0110_0100};	//4: R2=mem[100];
 	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_LOAD_FROM_MEM, R3, 8'b0110_0101};	//5: R3=mem[101];
 	 
-	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_ADD, R4, R3, R2};                 //6: R4=R3+R2;
+	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_ADD, R4, R3, R2};                  //6: R4=R3+R2;
 	 
-	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_XOR, R5, R3, R2};                 //7: R5=R3^R2;
+	 i=i+1;	cpuinst.raminst.mem[i]={cpuinst.OP_XOR, R5, R3, R2};                  //7: R5=R3^R2;
 	     
     
     file = $fopen("program.list","w");
